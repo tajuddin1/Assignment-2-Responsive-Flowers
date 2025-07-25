@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--noto-font);
+}
+
+:root {
+    --inter-font: "Inter", sans-serif;
+    --noto-font: "Noto Serif", serif;
+
+    /* Color variables */
+    --primary-color: #E95A08;
+    --text-dark: #000000;
+    --text-light: rgba(0, 0, 0, 0.5);
+    --nav-link-dark: #252432;
+    --nav-link-light: #8987A1;
+    --card-title-color: #111111;
+    --button-text: #FFFFFF;
+    --footer-bg: #FFFFFF;
+    --footer-text: #6B7280;
+}
+
+
+/* related style*/
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+.btn {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--button-text);
+    border: none;
+    padding: 19px 0px;
+     transition: 0.3s ease-in;
+}
+
+.btn:hover{
+    background-color: #85563a;
+}
+.nav-section {
+    padding: 30px 0 0 0;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>section {
+    padding: 100px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    transition: 0.3s ease-in;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #E95A08;
+}
+
+.nav-link2,
+.nav-link3 {
+    color: var(--nav-link-light);
+}
+
+.nav-link1,
+.nav-link4 {
+    color: var(--nav-link-dark);
+}
+
+/* banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.left-banner,
+.right-banner {
+    flex: 1;
+}
+
+.banner-title {
+    font-size: 4.063rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-family: var(--noto-font);
+    margin-bottom: 13px;
+}
+
+.fresh-flowers {
+    color: var(--primary-color);
+}
+
+.banner-description {
+    font-size: 1.375rem;
+    font-family: var(--inter-font);
+    padding: 0 14px 0px 0;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+/* Plants Section */
+.Plants-header {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.plants-title {
+    font-size: 3.125rem;
+    font-family: var(--noto-font);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.plants-description {
+    max-width: 888px;
+    font-size: 1.375rem;
+    color: var(--text-light);
+    font-family: var(--inter-font);
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.plants {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-img {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 1.375rem;
+    font-family: var(--inter-font);
+    text-align: center;
+}
+
+.card-title {
+    color: var(--card-title-color);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.card-price {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+/* Plants Lover Section */
+
+.lover-section {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.lover-left {
+    flex: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.lover-right {
+    padding: 38px 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.badge {
+    width: 286px;
+    position: absolute;
+    top: -123px;
+    right: -95px;
+}
+
+.lover-title {
+    font-size: 3.125rem;
+    letter-spacing: 3px;
+    font-family: var(--noto-font);
+    font-weight: 700;
+    margin-bottom: 16PX;
+}
+
+.lover-item p {
+    font-size: 1.375rem;
+    letter-spacing: 1.2px;
+    color: var(--text-light);
+    font-family: var(--inter-font);
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+/* Latest Deal Section */
+.deal-box {
+    display: flex;
+    gap: 28px;
+}
+
+.left-deal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.deal-img img {
+    display: block;
+}
+
+.deal-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.deal-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.deal-persent {
+    font-size: 1.25rem;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    color: var(--button-text);
+}
+
+.deal-shop {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--button-text);
+    margin: 20px 0;
+}
+
+.deal-persent3 {
+    font-size: 2.5rem;
+}
+
+.deal-persent4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+/* Join Section */
+.join-main {
+    padding: 202px 0;
+    background-image: url(./image/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.join-body {
+    text-align: center;
+}
+
+.join-title {
+    font-size: 3.125rem;
+    letter-spacing: 3px;
+    color: var(--button-text);
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.join-input-field {
+    display: flex;
+    max-width: 830px;
+    margin: 0px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-input-field input,
+.btn-area {
+    display: block;
+    padding: 15px 20px;
+}
+
+#email {
+    flex: 1;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-area {
+    width: 186px;
+}
+
+/*Footer Section*/
+footer {
+    background-color: var(--footer-bg);
+    padding: 50px 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fresh-box {
+    max-width: 359px;
+}
+
+.footer-box ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.f-link {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--footer-text);
+    font-weight: 400;
+}
+
+.footer-box img {
+    max-width: 138px;
+    margin-bottom: 16px;
+}
+
+.last-ff-icon {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-ff-icon img {
+    max-width: 35px;
+}
+
