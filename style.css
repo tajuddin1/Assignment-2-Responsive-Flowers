@@ -34,6 +34,7 @@ body {
 img {
     width: 100%;
 }
+
 .btn {
     width: 100%;
     font-size: 1rem;
@@ -42,12 +43,13 @@ img {
     color: var(--button-text);
     border: none;
     padding: 19px 0px;
-     transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #85563a;
 }
+
 .nav-section {
     padding: 30px 0 0 0;
 }
@@ -76,7 +78,8 @@ main>section {
 .nav-link {
     text-decoration: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #E95A08;
 }
 
@@ -375,6 +378,7 @@ footer {
 .last-ff-icon img {
     max-width: 35px;
 }
+
 @media screen and (max-width:1180px) {
     .container {
         max-width: 100%;
@@ -385,9 +389,6 @@ footer {
 
 /* responsive */
 @media screen and (max-width:576px) {
-    .container {
-        width: 100%;
-    }
 
     main>section {
         padding: 60px 0;
@@ -498,9 +499,6 @@ footer {
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .container {
-        width: 100%;
-    }
 
     main>section {
         padding: 70px 0;
@@ -534,15 +532,6 @@ footer {
 
     .left-deal {
         flex-direction: row;
-    }
-
-    .left-banner,
-    .plants,
-    .lover-section,
-    .deal-main,
-    .join-input-field,
-    .footer-main {
-        padding: 0 20px;
     }
 
     .badge {
