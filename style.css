@@ -376,3 +376,181 @@ footer {
     max-width: 35px;
 }
 
+/* responsive */
+@media screen and (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    main>section {
+        padding: 60px 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    /* header */
+
+    nav {
+        padding: 20px 0;
+        margin: 0 20px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .brand img {
+        max-width: 63px;
+    }
+
+    /* .nav-link4{
+        font-size: 1.5rem;
+    } */
+    .nav-link1,
+    .nav-link2,
+    .nav-link3,
+    .badge {
+        display: none;
+        text-align: center;
+    }
+
+    .nav-section {
+        padding: 0;
+    }
+
+    /* banner  */
+    .banner-title,
+    .plants-title,
+    .banner-title {
+        font-size: 2.188rem;
+    }
+
+    .lover-title {
+        font-size: 1.875rem;
+    }
+
+    .banner-description,
+    .lover-item p,
+    .plants-description {
+        font-size: 0.875rem;
+        width: 100%;
+    }
+
+    .banner {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .left-banner,
+    .plants,
+    .lover-section,
+    .deal-main,
+    .join-input-field,
+    .footer-main {
+        padding: 0 20px;
+    }
+
+    /* Plants Section  */
+    .plants {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-description {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 8px;
+    }
+
+    /* Plants Lover Section  */
+    .lover-section,
+    .deal-box,
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .deal-shop {
+        margin: 10px 0;
+    }
+
+    .deal-persent3,
+    .join-title {
+        font-size: 1.563rem;
+    }
+
+    .Plants-header {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* footer */
+    .footer-box {
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+
+    .join-input-field {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    main>section {
+        padding: 70px 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    nav {
+        margin: 0 10px;
+        align-items: center;
+    }
+
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Plants Lover Section */
+    .plants {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lover-section,
+    .deal-box,
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .left-deal {
+        flex-direction: row;
+    }
+
+    .left-banner,
+    .plants,
+    .lover-section,
+    .deal-main,
+    .join-input-field,
+    .footer-main {
+        padding: 0 20px;
+    }
+
+    .badge {
+        width: 286px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
