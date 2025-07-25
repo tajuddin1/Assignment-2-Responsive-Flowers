@@ -375,6 +375,13 @@ footer {
 .last-ff-icon img {
     max-width: 35px;
 }
+@media screen and (max-width:1180px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -443,14 +450,6 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .left-banner,
-    .plants,
-    .lover-section,
-    .deal-main,
-    .join-input-field,
-    .footer-main {
-        padding: 0 20px;
-    }
 
     /* Plants Section  */
     .plants {
@@ -490,7 +489,6 @@ footer {
     /* footer */
     .footer-box {
         margin: 20px 0;
-        padding: 0 20px;
     }
 
     .join-input-field {
